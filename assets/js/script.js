@@ -29,12 +29,12 @@ const printNumbersByTimeout = (from, to, interval) => {
 
 printNumbersByTimeout(6, 10, 1000);
 
-function setImage({ message }) {
+const setImage = ({ message }) => {
   if (!article.contains(image)) {
     article.prepend(image);
   }
   image.src = `${message}`;
-}
+};
 
 const article = document.createElement("article");
 article.classList.add("dogs-article");
